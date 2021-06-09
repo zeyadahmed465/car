@@ -1,0 +1,87 @@
+<html>
+
+<head>
+    <title>Home</title>
+    <style>
+    *
+{
+	margin:0;
+	padding:0;
+	font-family:Century Gothic;
+}
+div.container
+{
+	background-image:url('barbus.jpg');
+	height:100vh;	
+	background-size:cover;
+	background-position:center;
+}
+ul
+{
+	float:right;
+	list-style-type:none;
+	margin-top:20px;
+	margin-right:50px;
+}
+ul li
+{
+	display:inline-block;
+
+}
+ul li a
+{
+	text-decoration:none;
+	border:3px solid transparent;
+	margin:10px;/*دى هتكبلالى الهوامش داخل البوكس*/
+	padding:5px 20px;
+
+}
+ul li.active a/*كده انا ببينله انى واقف حاليا فى الhome*/
+{
+	background-color:#fff;
+	color:#000;
+}
+ul li a:hover
+{
+	background-color:#fff;
+	color:#000;
+	transition:0.6s ease;
+}
+.logo img
+{
+	float:left;
+	width:150px;
+	height:auto;
+	margin-left:50px;
+}
+.title
+{
+	position:absolute;
+	left:50%;
+	top:50%;
+
+}
+.title h1
+{
+	color:#fff;
+	font-size:80px
+}
+@media screen and (max-width:600px) {
+	body{
+	background-size:auto;
+	}
+}
+    </style>
+</head>
+
+<body>
+  
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="project.html"> Home</a></li>
+                    <li><a href="contact.html"> Contact Us</a></li>
+                    <li><a href="Our Project.html">Our Project</a></li>
+                </ul>
+        </div>
+</body>
