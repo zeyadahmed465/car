@@ -1,0 +1,196 @@
+<html>
+
+<head>
+<title>Car body</title>
+   <style>
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div.container{
+    width:100%;
+    height: auto;
+    background-color: rgb(243, 201, 124);
+    position: relative;
+}
+h1{text-align: center;}
+ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+.navigation
+{
+   float: right;
+    margin:20px auto;
+    background-color:rgb(58, 57, 57);
+    padding:0 20px;
+    min-height:48px;
+}
+.navigation > li{
+    color:#fff;
+    padding:15px 10px;
+    float:left;
+   list-style-type:none;
+}
+.navigation  li a{
+    color:#fff;
+   text-decoration:none;
+}
+.navigation {
+    position:relative;
+    top:-25px;
+      border: 1px solid black;
+}
+.navigation .submenu{
+    position:absolute;
+    top:42px;
+    left:0;
+    width:170px;
+    background-color:rgb(39, 38, 38);
+    padding:10px;
+}
+.navigation .submenu{
+    padding:10px;
+    border: 1px solid black;
+    display: none;
+}
+.navigation .submenu li{
+    padding:10px;
+    border: 1px solid black;
+    color: white;
+    background-color: rgb(139, 136, 136);
+}
+.navigation .submenu li:hover{
+background-color: rgb(73, 68, 68);
+}
+.navigation .submenu li:hover a{
+color: white;}
+.navigation .submenu li a{
+    color:black;
+    text-decoration:none;
+}
+.navigation .submenu li a:hover{
+    color:#fff;
+    text-decoration:none;
+}
+.navigation .submenu::before
+{
+    content:'';
+    border-width: 10px;
+    border-style: solid;
+    border-color:transparent transparent white transparent;
+    position: absolute;
+    top:-20px;
+    left:20%;
+}
+.navigation:hover .submenu
+{
+  display: block;
+}
+div .c3
+{
+    width: 100%;
+   counter-reset: x;
+   height: auto;
+}
+div .c3 ul.u2 li:before
+{
+    counter-increment:x;
+    content:counter(x);
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: white;
+    background-color: black; 
+      
+}
+ul.u2 li{
+    font-size: 20px;
+    font-weight:lighter;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+span.first{
+    font-weight: bold;
+    color: rgb(82, 8, 82);
+    font-size: 22px;
+}
+span.u4{padding-left: 30px;}
+img{
+    width: 30%;
+    height: 300px;
+   text-align: center;
+   margin-left: 350px;
+}
+div.in{text-align: center;}
+button{width: 10%;background-color: rgb(212, 169, 113);cursor: pointer;border: none; }
+button:hover{border: 1px solid black;}
+@media screen and (min-width:500px) and (max-width:1000px) {
+    div.container{
+    display: flex;
+    flex-direction: column;
+    }
+    .navigation
+    {
+    float: right;
+    }
+    img{
+        margin-left: 250px;
+        width:40%;
+        height: 200px;
+    }
+}
+@media screen and (max-width:1100px) {
+    button{width: 25%;font-size: 22px;font-weight: bold;}
+}
+@media screen and (max-width:400px) {
+    button{width: 50%;}
+    
+}
+    </style>
+    </head>
+
+<body>
+ <div class="container">
+<h1><i>WHAT ARE THE<br> PARTS OF CAR?</i></h1>
+<ul class="navigation">
+    <li class="menu">
+        <a href="#">Drop to see Car Types</a>
+        <ul class="submenu">
+    <li><a href="https://www.jaguar-egypt.com/en/jaguar-range-f-pace?campaign=70106000000qlvcAAA&gclsrc=aw.ds">Cross Over</a></li>
+    <li><a href="https://www.caranddriver.com/features/g27227136/best-sedans/">Sedan</a></li>
+    <li><a href="https://www.caranddriver.com/features/g26594907/best-hatchbacks/">Hatchback</a></li>
+    <li><a href="https://www.cars.com/research/suv/">SUV</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Coupe#:~:text=A%20coupe%20or%20coup%C3%A9%20is,French%20translation%20of%20%22cut%22.">Coupe</a></li>
+    <li><a href="https://www.cars.com/research/convertible/">Convertible</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Liftback#:~:text=A%20liftback%20is%20defined%20as,roof%20to%20the%20rear%20bumper.">Leftback</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Compact_car">Compact</a></li>
+</ul>
+</li>
+</ul> 
+<div style="font-weight: bold;font-size: 22px;"><i>The body of each car change according to the type of the car this example for a sedan car:</i></div><br>
+<img src="carmechanic.jpg" alt="The body of Car">
+<div class="c3">
+<ul class="u2">
+    <li><span class="first">Engine</span><br><span class="u4">heart and soul of your vehicle is the internal combustion engine. The engine block features parts such as the timing chain, camshaft, crankshaft, spark plugs, <span class="u4">cylinder heads, valves and pistons.</span></span> </li>
+    <li><span class="first"> Transmission</span><br> <span class="u4">  The transmission is a gearbox filled with gears and gear trains that makes effective use of the engine’s torque to change the gears and power the vehicle.</span></li>
+    <li><span class="first">Battery</span><br> <span class="u4">The battery delivers the electricity needed to run your vehicle’s electrical components. Without a battery, your car won’t run.</span></li>
+    <li><span class="first"> Alternator</span><br><span class="u4">The radiator is responsible for helping the engine keep cool by removing heat from coolant before it is pumped back through the engine.</span></span> </li>
+    <li><span class="first"> Radiator</span><br> <span class="u4"> The radiator is responsible for helping the engine keep cool by removing heat from coolant before it is pumped back through the engine.</span>  </li>
+    <li><span class="first">Front Axle</span><br><span class="u4"> Part of the suspension system, the front axle is where the front wheel hubs are attached</span></li>
+    <li><span class="first">Front Steering and Suspension</span><br> <span class="u4"> Helps improve the ride and handling of the vehicle. Though systems vary in makeup, they typically include shocks/struts,</span> </li>
+</ul>
+<div class="in"><button id="myButton" class="float-left submit-button">Next Page=></button></div>
+ </div>
+</div>
+<script type="text/javascript">
+    document. getElementById("myButton"). onclick = function () {
+    location. href = "elcectric.html";
+    };
+    </script>
+</body>
+    </html>
