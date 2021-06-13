@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+    <title>Registration</title>
+    <style>
+        body{
+            background-color: wheat;
+        }
+        div.container{
+            height: 600px;
+            width: 70%;
+            margin: auto;
+            margin-top: 150px;
+            border-radius: 15%;
+            background-color: burlywood;
+        }
+        fieldset {
+            background-color:burlywood;
+            height: 490px;
+            width: 60%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            border-width: 5px;
+            border-color: wheat;  
+            border-radius: 20px;
+        }
+        legend{color: white; font-weight: bolder;}
+        label{font-weight: bold;}
+        input,select{
+            width:40%;
+            height: 40px;
+            margin: 10px 20px ;
+            border:none;
+        }
+        input.sub{
+            width: 100px;
+            height: 100px;
+            margin-left: 400px;
+            border-radius: 50%;
+            cursor: pointer;
+            background-color: rgb(250, 219, 160);
+        }
+      
+        
+        @media screen and (max-width:1000px) {
+          form{  text-align: center;  }
+            input{margin: auto;height: auto;}
+            select{margin: auto;height: auto;}
+            input.sub{height: 60px;}
+        }
+        @media screen and (max-width:800px) {
+           input{ width: 70%;}
+           body{font-size: 21px;}
+        }
+        @media screen and (min-width:100px) and (max-width:1300px) {
+           input.sub2,input.sub{
+             margin: auto;
+            }
+        }
+    </style>
+  
+</head>
+
+<body>
+    <form action="project.html" onsubmit="return verifyPassword() " method="GET">  
+        <div class="container"><br><br>
+    <fieldset>
+      <legend>Registration</legend>
+            <label>First Name</label>
+            <input type="text" name="first name" required placeholder="First Name">
+    
+            <label>Last Name</label>
+            <input type="text" name="Last name" required placeholder="Last Name">
+            
+            <label>Email</label>
+            <input type="email" name="Email" required placeholder="Email">
+           
+            <label> Enter Password </label>  
+            <input type="password" id="password" name="password" placeholder="Type Your Password" >
+            <span id = "message" style="color:red"> </span>  
+            
+            <label>Phone Number</label>
+            <input id="telephone" type="tel" name="phone number" placeholder="Mobile Phone[0-9]{11}" required>
+            <label>Gender</label>
+            <select>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+            <label>Address</label>
+            <input type="text" name="my age" required placeholder="Enter Address">
+
+    <!-- Click to verify valid password -->  
+    <input class="sub" type = "submit" value = "Submit">  
+  
+      </fieldset>
+    </form>
+</div>
+    <script src="valid.js"></script>
+</body>
+
+</html>
